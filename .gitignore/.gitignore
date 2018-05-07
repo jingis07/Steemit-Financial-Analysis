@@ -1,0 +1,162 @@
+#### Repository
+
+https://github.com/steemit/steem
+
+
+
+#### Details
+With no doubt, the financial reward aspect of the steemit block-chain is a great motivator for activities on the block-chain. For every business, financial management is key to existence and sustainability and we would looking at analysis from different aspect inline with best practice procedures and guidelines without which collapse will be inevitable
+
+I will be presenting financial data about steemit for the first quarter of 2018. I will be looking at the in the inflow and outflow of steem from the block chain and how users are managing their cash by powering up or powering down among other checkpoints.
+
+The analysis was done to 'confirm' and analyse some aspect of the steemit financial market,
+#### Outline
+
+- USD Market Cap, Supply and Price
+- Daily Transaction
+- Steem Power-UP vs Power-DOWN
+- Top 10 Largest Transfer
+- Top 10 Power-UPs
+
+#### Scope of Analysis
+ 
+- Date of the analysis: 3rd May 2018
+- Timeframe of the analysed data: January to March 2018
+- Components of the analysis: Financial Activities on Steemit
+
+#### Tools
+Microsoft SQL Server Management Studio was used to get data from STEEMSQL and Microsoft Excel was used to produce table and graphs
+
+SCRIPTS
+
+SELECT    *
+ FROM TxTransfers
+ WHERE CONVERT(DATE,timestamp) BETWEEN '2018-01-01' AND '2018-04-01'
+
+SELECT    *
+ FROM TxWithdrawals
+ WHERE CONVERT(DATE,timestamp) BETWEEN '2018-01-01' AND '2018-04-01'
+
+SELECT    *
+ FROM Transactions
+ WHERE CONVERT(DATE,timestamp) BETWEEN '2018-01-01' AND '2018-04-01'
+
+https://www.coingecko.com/en/price_charts/steem/usd
+
+
+#### Results
+
+USD MARKET CAP, SUPPLY AND PRICE
+
+![](https://steemitimages.com/DQmVu3EHm3enLkbdfZUnviWNK8Rm7JZqr6ATrqpUwzcJgM8/image.png)
+
+Looking at the graph we see the market cap of STEEM  dropping from January to March, so what does this mean for the STEEM crypto currency?
+
+Market cap is the total value of all the coins. Market Capitalization is simply the amount of Money (USD, EUR, GBP NGN etc) invested into a cryptocurrency. As the market cap number increases the value of the cryptocurrency increases which means it is gaining more popularity. Market Capitalization is what determines the value of a coin.
+
+If the supply of a coin is very high then it means there are so many coins  and it could mean many things and one of them is that might it is cheap or that each one is not worth very much. Or if the price of an individual coin is high but the market cap is low it probably means that there are not many coins.
+
+At the end of Mach 2018 Steem had a market cap of about 397,763,107.68 from a January high of about 2,015,799,445.07
+
+Market Cap = Price x Circulating Supply
+
+![](https://steemitimages.com/DQmZJbwbDHFD4CAwFVLPi2LaFDGdwAaLrav4G2t1Cw9jEfE/image.png)
+
+Volume is the total number of crypto currency that’s been traded in the last 24 hours period.
+If the volume is more then it means then the coin is active and more people started to show interest in buying and selling.
+
+Volume is important as it tells us how active the coin is. If volume is high it means many people are interested in buying or selling it and vice versa. Volue remaining high is good because it could mean that the coin is very active so it will be easy to buy and sell.
+
+DAILY TRANSACTION
+
+| MONTH  | TRANSACTIONS | 
+|--------|-------------| 
+| Jan-18 | 1,435,874     | 
+| Feb-18 | 2,007,024     | 
+| Mar-18 | 1,847,425     | 
+
+Monthly Trasactions (trasnfers) gives us a peep into how users on steemit move their STEEM AND SBD. Most of the top transfers were to exchanges.
+
+Transfers to bid bots is also increasing as people look to earn more from their post
+
+The transfers to other users consisted of 'small' transfers but still constituted a large percentage of total transfers
+
+![](https://steemitimages.com/DQmbDc34t6H2NUTQxcZENUYwsfubZSQNPcsx4Tu1enWLcwo/image.png)
+
+
+STEEM POWER-UP VS POWER-DOWN
+
+| Date    | Powered UP | Powered DOWN | Difference | 
+|---------|------------|--------------|------------| 
+| WEEK 1  | 1,466,068  | 1,235,334    | 230,734    | 
+| WEEK 2  | 2,244,760  | 1,147,673    | 1,097,087  | 
+| WEEK 3  | 4,909,151  | 6,773,146    | -1,863,995 | 
+| WEEK 4  | 1,093,917  | 6,707,362    | -5,613,445 | 
+| WEEK 5  | 9,247,335  | 6,407,731    | 2,839,604  | 
+| WEEK 6  | 1,143,445  | 6,650,390    | -5,506,945 | 
+| WEEK 7  | 1,112,070  | 6,656,397    | -5,544,327 | 
+| WEEK 8  | 1,396,860  | 1,119,937    | 276,923    | 
+| WEEK 9  | 1,436,382  | 1,117,540    | 318,842    | 
+| WEEK 10 | 1,554,563  | 1,130,292    | 424,271    | 
+| WEEK 11 | 1,418,074  | 1,267,373    | 150,701    | 
+| WEEK 12 | 1,100,870  | 1,137,073    | -36,203    | 
+
+- 
+
+![](https://steemitimages.com/DQmNm2wmZZ6SBLfnyJhRDWtaX1sQLzUqcj82ae1SAxWFeGN/image.png)
+
+
+Powering up - If you have STEEM tokens, you can Power Up to STEEM Power to get more voting influence on posts and comments.
+
+Powering down -means converting your STEEM Power into liquid STEEM over a period of time. It takes about 12 weeks to convert your steem power to steem. You will lose your influence in the network proportionally to how much is powered down.
+
+
+TOP 10 LARGEST TRANSFER
+
+| Date & Time   | From         | To              | Amount (STEEM) | 
+|---------------|--------------|-----------------|----------------| 
+| Jan 16, 14:52 | @steemit     | @steemit2       | 5,496,512.51   | 
+| Feb 1, 19:12  | @steemit     | @steemit2       | 3,000,000.00   | 
+| Feb 6, 08:23  | @deepcrypto8 | @binance-hot    | 1,640,655.73   | 
+| Feb 1, 21:49  | @tostitos    | @bittrex        | 714,990.50     | 
+| Mar 14, 01:54 | @steemit2    | @alpha          | 600,000.00     | 
+| Mar 14, 01:52 | @blocktrades | @steemit2       | 600,000.00     | 
+| Mar 14, 01:52 | @steemit2    | @blocktrades    | 600,000.00     | 
+| Feb 7, 04:08  | @steemit2    | @alpha          | 600,000.00     | 
+| Jan 21, 19:27 | @steemit2    | @alpha          | 600,000.00     | 
+| Feb 19, 08:03 | @bittrex     | @upbit-exchange | 599,999.99     | 
+
+
+TOP 10 POWER-UPS
+
+| Date & Time   | From      | To                | Amount (STEEM) | 
+|---------------|-----------|-------------------|----------------| 
+| Feb 1, 19:12  | @steemit  | @misterdelegation | 5,998,819.00   | 
+| Jan 16, 19:09 | @steemit2 | @misterdelegation | 3,500,000.00   | 
+| Feb 1, 19:11  | @steemit  | @steem            | 2,000,000.00   | 
+| Jan 3, 18:00  | @steemit2 | @steem            | 500,000.00     | 
+| Jan 10, 18:01 | @steemit2 | @steem            | 341,000.00     | 
+| Jan 8, 14:47  | @steemit2 | @steem            | 300,000.00     | 
+| Mar 3, 01:30  | @madpuppy | @madpuppy         | 245,479.45     | 
+| Jan 15, 04:30 | @gcalex   | @gcalex           | 160,958.50     | 
+| Mar 29, 04:26 | @appics   | @appics           | 160,000.00     | 
+| Mar 11, 18:22 | @steemit2 | @steemit2         | 100,000.00     | 
+
+
+CONCLUSION
+
+On market cap, supply and price
+
+The market cap of STEEM has taken a slight  from January to March and we can see the relationship between market cap and price. As market cap is dropping, the price of steem is also dropping.
+
+In the last few months government around the world are cracking down crypto currencies and bringing new regulations which has affected the confidence in cryto currencies, people are beginning to doubt its sustainability
+
+Power-UP and Power-DOWN should be able to find a balance, looking at the graphs we can see a lot of power down as the price of steem was dropping, that was a 'panic' from most users who wanted to 'cash out' in fear of the collapse of steem price.
+
+Too much powering down is not good for the system, the difference between power up and down should not be much.
+
+The financial future of steemit and steem is very bright and can only get better
+
+#### Proof of Work Done
+
+https://github.com/jingis07
